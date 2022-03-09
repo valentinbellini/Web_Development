@@ -1,0 +1,40 @@
+body{
+	color: #222;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.texturas{
+	margin: 10px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	user-select: none;
+}
+
+.texturas  div{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 6px;
+	user-select: all;
+}
+.texturas div:active{
+	opacity: 0.7;
+}
+
+.textura1{
+	background: url("textura1.png");
+}
+.textura2{
+	background: url("textura2.png");
+}
+.textura3{
+	background: url("textura3.png");
+}
+
+.zona{
+	margin: 10px;
+	background: #ddd;
+	height: 450px;
+}
