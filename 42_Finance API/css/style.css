@@ -1,0 +1,187 @@
+body {
+    background-color: #eaeaea;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.in-flex{
+    flex: 1;
+}
+
+
+/* ------------------------------ SEARCH CONTAINER ------------------------------*/
+.search-container{
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #eaeaea;
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+}
+#searchText , #searchButton{
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+#searchText{
+    flex: 3;
+}
+#searchButton{
+    flex: 1;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #f0b90b;
+    outline: none;
+    border-style: none;
+}
+#searchButton:hover{
+    border: 1px solid black;
+}
+.search-coins{
+    box-sizing: border-box;
+    padding: 10px 30px;
+    width: 100%;
+}
+.searched-pair{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #ededed;
+    color: #000;
+    border-radius: 5px;
+}
+.searched-pair p{
+    flex: 3;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+#searchText{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.notFound{
+    text-align: center;
+    color: #d01;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 24px;
+    
+}
+
+.optionButton{
+    flex: 1;
+    width: 50%;
+    margin: 0 10px;
+    outline: none;
+    border-style: none;
+}
+
+#cleanSearch{
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    outline: none;
+    border-style: none;
+}
+
+/* ------------------------------ SEARCH CONTAINER ------------------------------*/
+/* ------------------------------ FAVORITE CONTAINER ------------------------------*/
+#favoriteButton{
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #f0b90b;
+    outline: none;
+    border-style: none;
+}
+#favoriteButton:hover{
+    border: 1px solid black;
+}
+
+.favorite-pairs{
+    display: block;
+}
+.favPair{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: #eaeaea;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    
+}
+.favPair p{
+    flex: 1;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+/* ------------------------------ FAVORITE CONTAINER ------------------------------*/
+/* ------------------------------ CHANGE CONTAINER ------------------------------*/
+.column2{
+    padding: 10px 40px;
+}
+
+/* ------------------------------ CHANGE CONTAINER ------------------------------*/
+
+
+.tabla-css {
+   /* display: none;*/
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+    box-shadow: 0 0 25px #a39e9e;
+    border-collapse: collapse;
+}
+.tabla-css thead tr {
+    background-color: #f0b90b;
+    color:#252a34;
+    text-align: center;
+}
+.tabla-css th,
+.tabla-css td {
+    padding: 20px 20px;
+    text-align: center;
+}
+.tabla-css tbody tr:nth-of-type(even){
+ background-color: #f8c7282c;   
+}
