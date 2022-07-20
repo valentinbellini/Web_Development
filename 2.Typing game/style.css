@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(255, 253, 152);
+    font-family:'Courier New', Courier, monospace
+}
+
+.tittle{
+    text-align: center;
+}
+.description{
+    text-align: justify;
+    margin: 10px 12rem;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.game-description{
+    text-align: center;
+    font-size: 1.2em;
+    color: red;
+}
+.playing-area{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#quote{
+    font-size: 1.2em;
+    text-align: center;
+    color: #f2f;
+}
+.start-btn{
+    width: 70%;
+    margin: 10px auto;
+    height: 30px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: sans-serif;
+    opacity:0.8;
+}
+.start-btn:hover{
+    opacity:1;
+}
+input{
+    height: 40px;
+    width: 70%;
+    margin: 10px auto
+}
+.highlight {
+    background-color: rgb(82, 255, 82);
+  }
+  
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+.refresh-btn{
+    padding: 3px 8px;
+}
+
+.time-table{
+    text-align: center;
+    margin: 0 auto;
+    flex: 1;
+    height: 200px;
+}
+.table-element{
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 1.5em;
+}
+.table-head{
+    font-size: 1.5em;
+}
+.chart{
+    width: 60%;
+    height: 700px;
+    flex: 2;
+}
+.flex-in{
+    display: flex;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+ .flex-in{
+    flex-direction: column-reverse;
+ }
+ .chart{
+    width: 100%;
+    margin:0 auto;
+}
+.description{
+    margin: 10px 3rem;
+}
+}

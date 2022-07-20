@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Typing game </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button type="button" id="refresh-btn" class="refresh-btn">Refresh data</button>
+        <h1 class="tittle"> Welcome to the typing game! </h1>
+        <p class="description">
+            Este juego fue realizado con el fin de refrescar y mejorar
+            los conocimientos en Javascript. Se utiliza el evento "Listener" para detectar el click
+            de los botones y el tipeo de texto. Luego en la logica se trabaja sobre el DOM segun las
+            condiciones del juego y por ultimo se guarda el tiempo en el localStorage con el fin de
+            poder realizar una tabla y gráfica de los tiempos medidos por el usuario para tener como
+            referencias. El objetivo del juego no es el estilo, por lo tanto no hay enfoque sobre el
+            diseño del mismo.
+        </p>
+        <h3 class="game-description"> Practice your typing skills with some quotes. Click **start** to begin or **refresh data** to reset!</h3>
+        
+        <h4 id="quote"></h4>
+        
+        <div class="playing-area">
+            <input type="text" aria-label="current word" id="typed-value"/>
+            <button type="button" id="start" class="start-btn">Start</button>
+        </div>
+       <div class="flex-in">
+            <table class="time-table">
+                <thead>
+                <tr>
+                    <th class="table-head">ID</th>
+                    <th class="table-head">Tiempo</th>
+                </tr>
+                </thead>
+                <tbody id="data-tabla">
+                </tbody>
+            </table>
+            
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+       </div>
+        
+        <p id="message"></p>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
